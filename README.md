@@ -1,5 +1,5 @@
 
-#使用说明
+# 使用说明
 
 ## 系统要求
 1. **安卓手机一部看直播**
@@ -16,7 +16,7 @@
 7. 每个手机像素不一样,在config文件中调整
 8. 启动项目 python helper.py 每当题目出来时按下回车键即可   
 
-##效果
+## 效果
 ![使用效果](https://github.com/JoJocoder/ZhiShiWenDa-Helper/blob/master/image/xiaoguo3.png)
 
 
