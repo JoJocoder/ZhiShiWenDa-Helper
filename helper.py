@@ -3,9 +3,6 @@ from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-image_directory = "D:/screenshots/"
-driver_location = r"D:\SoftwareInstall\chromedriver_win32\chromedriver.exe"
-
 driver = webdriver.Chrome(config.driver_location)
 # 访问百度
 driver.get('http://www.baidu.com')
@@ -22,8 +19,8 @@ while True:
 
   if not os.path.exists(config.image_directory):
     os.mkdir(config.image_directory)
-  #os.system("adb shell /system/bin/screencap -p /sdcard/screenshot.png")
-  #os.system("adb pull /sdcard/screenshot.png " + imagepath)
+  os.system("adb shell /system/bin/screencap -p /sdcard/screenshot.png")
+  os.system("adb pull /sdcard/screenshot.png " + imagepath)
 
   im = Image.open(imagepath)
   img_size = im.size
@@ -32,10 +29,8 @@ while True:
 
   region = im.crop((config.left, config.top, w - config.right, config.bottom))  # 裁剪的区域
   region.save(region_path)
-
   image_data = open(region_path, 'rb').read();
-
-  keyword = baiduocr.get_text_from_image(image_data, config.app_id, config.app_key, config.app_secret)
+  keyword = baiduocr.get_text_from_image(image_data)
 
   print("OCR识别内容: " + keyword)
 
