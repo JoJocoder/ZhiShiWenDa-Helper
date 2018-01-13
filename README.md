@@ -11,7 +11,7 @@
 3. 修改默认的配置文件config.py 中Chrome Driver的路径
  Chrome Driver 在lib有一份,需要设置存放的路径 [driver下载地址](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 4. 修改配置文件config.py 中图片存放路径
-5. 使用百度OCR识别，申请使用，填写APPID等至config.py ![百度OCR]（https://cloud.baidu.com/product/ocr.html）
+5. 使用百度OCR识别，申请使用，填写APPID等至config.py [百度OCR](https://cloud.baidu.com/product/ocr.html)
 6. 把手机设为开发者模式,在电脑环境变量中添加adb路径,lib中有下载好的adb,调试好adb
 7. 每个手机像素不一样,在config文件中调整，默认为1080P，华为荣耀9测试通过。
 8. 启动项目 python helper.py 每当题目出来时按下回车键即可   
