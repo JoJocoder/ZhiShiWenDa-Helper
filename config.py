@@ -8,3 +8,7 @@ top = 250 # 距离顶部的像素
 right = 70 # 距离右边的像素
 bottom = 600 #距离顶部的像素
 #1080P分辨率
+# 你的百度OCR APPID AK SK 
+APP_ID = ''
+API_KEY = ''
+SECRET_KEY = ''
